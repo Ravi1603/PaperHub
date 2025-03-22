@@ -15,7 +15,7 @@ def preprocess_data(df):
     tfidf_matrix = tfidf_vectorizer.fit_transform(df['processed_text'])
    
     # Create data directory if it doesn't exist
-    data_dir = os.path.join("C:\\Users\\rroganna\\Desktop\\paper_hub\\data")
+    data_dir = os.path.join("C:\\Users\\rroganna\\Desktop\\PaperHub\\data")
     os.makedirs(data_dir, exist_ok=True)
     
     # Save models to the specified data folder
