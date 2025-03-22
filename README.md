@@ -3,8 +3,9 @@
 This is the repo for BDA project till today. I completed coding till getting reccomendations. I added the screenshots of results for reference. 
 
 If you want to run the code fork this reop to your profile and type following commands in your command line
+```sh
 
-#cd scripts 
+cd scripts 
 
 #python app.py
 
