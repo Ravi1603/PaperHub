@@ -7,7 +7,7 @@ from collections import defaultdict
 from model import build_citation_graph, citation_similarity
 
 def hybrid_recommend(keywords, top_n=5):
-    data_dir = os.path.join("C:\\Users\\rroganna\\Desktop\\paper_hub\\data")
+    data_dir = os.path.join("C:\\Users\\rroganna\\Desktop\\PaperHub\\data")
     
     tfidf_vectorizer = joblib.load(os.path.join(data_dir, "tfidf_vectorizer.pkl"))
     tfidf_matrix = joblib.load(os.path.join(data_dir, "tfidf_matrix.pkl"))

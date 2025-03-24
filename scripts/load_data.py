@@ -67,7 +67,7 @@ def load_data_from_db():
     """
     try:
         print("Loading data from CSV file...")
-        df = pd.read_csv('C:\\Users\\rroganna\\Desktop\\paper_hub\\data\\arxiv_papers.csv')
+        df = pd.read_csv('C:\\Users\\rroganna\\Desktop\\PaperHub\\data\\arxiv_papers.csv')
         print(f"Successfully loaded {len(df)} papers from CSV.")
         return df
     except Exception as e:
