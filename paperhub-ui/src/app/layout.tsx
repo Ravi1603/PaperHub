@@ -4,7 +4,7 @@ import { Roboto } from "next/font/google";
 import type { Metadata } from "next";
 import Header from "@/components/header";
 import ChatWidget from "@/components/Chatbox/ChatBox";
-import  '@/components/ChatBox/ChatBox.css';
+import  '@/components/Chatbox/ChatBox.css';
 import "./globals.css";
 
 const roboto = Roboto({

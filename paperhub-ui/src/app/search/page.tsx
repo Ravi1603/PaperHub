@@ -8,7 +8,7 @@ import PaperCard from "@/components/PaperCard"
 type Paper = {
   title: string
   abstract: string
-  link: string
+  id: string         // <- changed from `link` to `id`
   source: string
   citations: number
 }
@@ -33,14 +33,16 @@ export default function SearchPage() {
             },
             body: JSON.stringify({ query }),
           })
+
           const rawData = await response.text()
           console.log("Raw response:", rawData)
           const data = JSON.parse(rawData)
+
           if (data.recommendations) {
             setResults(data.recommendations.map((rec: any) => ({
               title: rec.title,
               abstract: rec.abstract,
-              link: rec.link,
+              id: rec.id,                   // <- changed from `link`
               source: rec.source,
               citations: rec.citations,
             })))

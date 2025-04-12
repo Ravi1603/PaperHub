@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 type Paper = {
   title: string
   abstract: string
-  link: string
+  id: string         // <- used as the paper's URL
   source: string
   citations: number
 }
@@ -27,24 +27,19 @@ export default function PaperCard({ paper }: { paper: Paper }) {
     setFavorited(!favorited)
   }
 
-  // Generate PDF link by replacing 'abs' with 'pdf'
-  const pdfLink = paper.link ? paper.link.replace('/abs/', '/pdf/') : ''
-
-  console.log("Paper link:", paper.link) // Log the original link
-  console.log("PDF link:", pdfLink) // Log the generated PDF link
+  // Generate PDF link by replacing 'abs' with 'pdf' from paper.id
+  const pdfLink = paper.id ? paper.id.replace('/abs/', '/pdf/') : ''
 
   return (
     <div className="bg-white rounded-lg shadow-md p-6 mb-6 space-y-2">
       <h2 className="text-lg font-semibold text-[#3a7ca5]">
-        <a href={paper.link} target="_blank" rel="noopener noreferrer" className="hover:underline">
+        <a href={paper.id} target="_blank" rel="noopener noreferrer" className="hover:underline">
           {paper.title}
         </a>
       </h2>
       <p className="text-sm text-gray-800 line-clamp-3">
-  <span className="font-semibold">Abstract:</span> {paper.abstract}
-</p>
-
-
+        <span className="font-semibold">Abstract:</span> {paper.abstract}
+      </p>
 
       <div className="flex justify-between items-center text-sm mt-3">
         <p className="text-gray-500">{paper.citations} Citations</p>
