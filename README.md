@@ -25,10 +25,31 @@ To run the full stack locally, follow the instructions below.
 
 ```sh
 git clone https://github.com/your-username/PaperHub.git
-cd PaperHub
+📦 2. Install Dependencies
+🔧 Backend (Python)
+sh
+Copy
+Edit
 pip install -r requirements.txt
+🌐 Frontend (React + Next.js)
+sh
+Copy
+Edit
 cd paperhub-ui
 npm install
+🧠 3. Run the App
+▶️ Start the Backend Server
+From the root of the project:
+
+sh
+Copy
+Edit
 python app.py
+💻 Start the Frontend
+sh
+Copy
+Edit
 cd paperhub-ui
 npm run dev
+Now visit 👉 http://localhost:3000 in your browser to explore the app.
+
