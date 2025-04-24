@@ -1,0 +1,19 @@
+.related-paper-card {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(4px);
+  }
+  
+  .related-paper-card h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1e3a8a;
+  }
+  
+  .related-paper-card p {
+    font-size: 13px;
+    color: #333;
+    margin: 6px 0;
+  }
