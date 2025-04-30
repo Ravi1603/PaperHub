@@ -56,4 +56,7 @@ Now visit 👉 http://localhost:3000 in your browser to explore the app.
 ## Recommendations:
 ![image](https://github.com/user-attachments/assets/c628629d-9cd5-4a0c-956d-d16ec4738fef)
 
+![image](https://github.com/user-attachments/assets/d5d13a4a-a0d2-4ddc-89c4-6dd5cfde4a43)
+
+
 
